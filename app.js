@@ -18,14 +18,11 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Set Routes
-app.use("/v1", router)
+app.use("/", router)
 
 // Handling not found error 404
 app.use(function(req, res, next) {
-    next(res.status(404).send('La página solicitada no existe'));
-    // var err = new Error('Not Found');
-    // err.status = 404;
-    // next(err);
+    next(res.status(404).send('Not Found'));
 });
 
 // Bootstrap

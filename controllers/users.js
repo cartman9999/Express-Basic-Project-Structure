@@ -2,7 +2,7 @@
 // Get user model
 const User = require('../models/User')
 
-const user1 = new User(1, 'cartman9999', 'Eric', 'Montes de Oca', 'eric.mdoj8@gmail.com', 'testtest');
+const user1 = new User(1, 'kevBr98', 'Kevin', 'Bryant', 'kev.bry95@gmail.com', 'testtest');
 const user2 = new User(2, 'test', 'John', 'Doe', 'test@gmail.com', 'testtest');
 
 const usersDatabase = [user1, user2];
